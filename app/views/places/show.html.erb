@@ -15,5 +15,30 @@
   <%= @place.logitude %>
 </p>
 
+<p>
+  <strong>Address:</strong>
+  <%= @place.address_line_1 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @place.city %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @place.country %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @place.state %>
+</p>
+
+<p>
+  <strong>Postcode:</strong>
+  <%= @place.postcode %>
+</p>
+
 <%= link_to 'Edit', edit_place_path(@place) %> |
 <%= link_to 'Back', places_path %>

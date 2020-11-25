@@ -8,6 +8,12 @@
       <th>Name</th>
       <th>Latitude</th>
       <th>Logitude</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>Country</th>
+      <th>State</th>
+      <th>Postcode</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,6 +24,11 @@
         <td><%= place.name %></td>
         <td><%= place.latitude %></td>
         <td><%= place.logitude %></td>
+        <td><%= place.address_line_1 %></td>
+        <td><%= place.city %></td>
+        <td><%= place.country %></td>
+        <td><%= place.state %></td>
+        <td><%= place.postcode %></td>
         <td><%= link_to 'Show', place %></td>
         <td><%= link_to 'Edit', edit_place_path(place) %></td>
         <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
