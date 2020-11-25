@@ -16,15 +16,16 @@ export default class extends Controller {
     }
 
     map() {
-        if (this._map == undefined) {
+        if (this._map == undefined) {  // if the map does not exist then create it 
             this._map = new google.maps.Map(this.mapTarget, {
                 center: new google.maps.LatLng(
-                    this.latitudeTarget.value,
+                    this. Target.value,
                     this.longitudeTarget.value
-                ),
+                ), 
                 zoom: 17
             })
         }
+        return this._map  // if the map does exist then we simply return it 
     }
 
     marker() {
