@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_25_213316) do
+ActiveRecord::Schema.define(version: 2020_11_26_012834) do
 
   create_table "places", force: :cascade do |t|
     t.string "name"
     t.decimal "latitude"
-    t.decimal "logitude"
+    t.decimal "longitude"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "address_line_1"

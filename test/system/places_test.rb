@@ -15,7 +15,7 @@ class PlacesTest < ApplicationSystemTestCase
     click_on "New Place"
 
     fill_in "Latitude", with: @place.latitude
-    fill_in "Logitude", with: @place.logitude
+    fill_in "Longitude", with: @place.longitude
     fill_in "Name", with: @place.name
     click_on "Create Place"
 
@@ -28,7 +28,7 @@ class PlacesTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Latitude", with: @place.latitude
-    fill_in "Logitude", with: @place.logitude
+    fill_in "Longitude", with: @place.longitude
     fill_in "Name", with: @place.name
     click_on "Update Place"
 

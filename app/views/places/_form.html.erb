@@ -11,17 +11,17 @@
 
   <div class="field">
     <%= form.label :search %>
-    <%= form.text_field :search, name: nil, class: 'form-control', data: { target: "maps.field", action: "keydown->maps#preventSubmit" } %>
+    <%= form.search_field :search, name: nil, class: 'form-control', data: { target: "maps.field", action: "keydown->maps#preventSubmit" } %>
   </div>
 
   <div class="field">
     <%= form.label :latitude %>
-    <%= form.text_field :latitude, class: 'form-control', data: { target: "maps.latitude" }%>
+    <%= form.text_field :latitude, class: 'form-control', data: { target: "maps.latitude" } %>
   </div>
 
   <div class="field">
-    <%= form.label :logitude %>
-    <%= form.text_field :logitude, class: 'form-control', data: { target: "maps.logitude" }%>
+    <%= form.label :longitude %>
+    <%= form.text_field :longitude, class: 'form-control', data: { target: "maps.longitude" }%>
   </div>
 
   <div class="field">
@@ -49,8 +49,9 @@
     <%= form.text_field :postcode %>
   </div>
 
-  <%= content_tag :div, nil, data: { target: "maps.map", class: 'map' }%>
+  <%= content_tag :div, nil, data: { target: "maps.map", class: 'map' } %>
+
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: 'btn-btn-primary' %>
   </div>
 <% end %>

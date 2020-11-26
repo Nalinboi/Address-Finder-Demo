@@ -3,9 +3,9 @@
 one:
   name: MyString
   latitude: 9.99
-  logitude: 9.99
+  longitude: 9.99
 
 two:
   name: MyString
   latitude: 9.99
-  logitude: 9.99
+  longitude: 9.99
